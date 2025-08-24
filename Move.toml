@@ -1,0 +1,15 @@
+[package]
+name = "twitter"
+version = "1.0.0"
+authors = []
+
+[addresses]
+twitter_addr="0x636d5c079150cfa41a0b486fc4f2f69bf9a3a042df1564c21909ca9ee908215a"  
+[dev-addresses]
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "mainnet"
+subdir = "aptos-move/framework/aptos-framework"
+
+[dev-dependencies]
