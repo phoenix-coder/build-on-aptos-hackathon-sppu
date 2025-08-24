@@ -1,73 +1,44 @@
-# Welcome to your Lovable project
+# Aptos Hackathon Project: Blockchain Task & Campaign Platform
 
-## Project info
+This project is a blockchain-based platform built for the **Aptos Hackathon**, where users can earn points and claim tokens by completing tasks. Marketers can create campaigns, purchase plans, and sponsor posts. The frontend was built with Lovable, and the smart contracts are written in **Aptos Move**.
 
-**URL**: https://lovable.dev/projects/8dcdae59-24b2-4940-81dc-990cdf8cc8a6
+## Features
 
-## How can I edit this code?
+### User Features
+- Earn points by completing tasks.
+- Points displayed in navbar; becomes a "Claim" button after reaching 20 points.
+- Connect Aptos wallet to interact with smart contracts.
+- View campaigns in a list with details: name, post link, reward per action, and a "Done" button.
 
-There are several ways of editing your application.
+### Marketer Features
+- **Add Campaign:** Create new campaigns via a popup form.
+- **Purchase Plan:** Choose between three plans:
+  - Basic: 5 posts, 40 APT
+  - Premium: 10 posts, 70 APT
+  - Pro: 20 posts, 150 APT
+- **Sponsor Post:** Select a campaign post to feature on top for 10 APT.
 
-**Use Lovable**
+## Tech Stack
+- **Frontend:** React/Next.js (from Lovable)
+- **UI Framework:** Tailwind CSS / Modular components
+- **Blockchain:** Aptos Move smart contracts
+- **Wallet Integration:** Petra wallet
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/8dcdae59-24b2-4940-81dc-990cdf8cc8a6) and start prompting.
+## How to Run
 
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+1. Clone the repository:
+```bash
+git clone <repo-url>
+cd frontend
+npm install
 npm run dev
 ```
+2.Connect Aptos wallet and interact with campaigns.
 
-**Edit a file directly in GitHub**
+Notes
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Points and token claiming are simulated via smart contract functions.
 
-**Use GitHub Codespaces**
+Ensure the Aptos devnet/testnet is configured in the wallet.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/8dcdae59-24b2-4940-81dc-990cdf8cc8a6) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+All campaigns, plans, and sponsorship features are tied to blockchain transactions.
